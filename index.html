@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriCare Advisory | Agricultural Guidance & Crop Care</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="hero" id="top">
+        <nav class="navigation">
+            <div class="logo">AgriCare Advisory</div>
+            <ul>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#experts">Expert Support</a></li>
+                <li><a href="#request">Request Assistance</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero-content">
+            <div>
+                <h1>Grow Smarter. Harvest Better.</h1>
+                <p>
+                    Comprehensive agricultural guidance and crop care services tailored to your farm's needs. 
+                    Our qualified agricultural engineers are always ready to deliver actionable insights for a healthier yield.
+                </p>
+                <div class="hero-actions">
+                    <a class="primary-btn" href="#request">Request Assistance</a>
+                    <a class="secondary-btn" href="#services">Explore Services</a>
+                </div>
+                <div class="availability">
+                    <span class="dot"></span>
+                    Qualified agricultural engineers available 7 days a week.
+                </div>
+            </div>
+            <div class="hero-card">
+                <h2>Seasonal Spotlight</h2>
+                <ul>
+                    <li>Soil nutrient mapping for precision planting.</li>
+                    <li>Integrated pest management plans.</li>
+                    <li>Weather-adaptive irrigation strategies.</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="services" id="services">
+            <h2>Our Services</h2>
+            <p class="section-intro">From soil to storage, we provide holistic solutions to keep your crops healthy and your operations efficient.</p>
+            <div class="service-grid">
+                <article class="service-card">
+                    <div class="icon">🌱</div>
+                    <h3>Crop Planning</h3>
+                    <p>Seasonal crop selection, rotation plans, and seed optimization tailored to your microclimate.</p>
+                </article>
+                <article class="service-card">
+                    <div class="icon">🧪</div>
+                    <h3>Soil &amp; Water Testing</h3>
+                    <p>Detailed soil profiling and water quality analysis to ensure optimal nutrient balance and irrigation.</p>
+                </article>
+                <article class="service-card">
+                    <div class="icon">🛡️</div>
+                    <h3>Pest &amp; Disease Control</h3>
+                    <p>Integrated pest management strategies that protect your crops while preserving the ecosystem.</p>
+                </article>
+                <article class="service-card">
+                    <div class="icon">🚜</div>
+                    <h3>Smart Farm Mechanization</h3>
+                    <p>Guidance on modern equipment, automation, and best practices to maximize efficiency.</p>
+                </article>
+                <article class="service-card">
+                    <div class="icon">💧</div>
+                    <h3>Irrigation Management</h3>
+                    <p>Data-driven irrigation schedules that conserve water while supporting consistent crop growth.</p>
+                </article>
+                <article class="service-card">
+                    <div class="icon">📊</div>
+                    <h3>Yield Monitoring</h3>
+                    <p>On-field assessments and analytics to track productivity and identify improvement opportunities.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="experts" id="experts">
+            <div class="experts-text">
+                <h2>Expert Guidance, On Demand</h2>
+                <p>
+                    Every consultation is handled by certified agricultural engineers with deep domain experience. 
+                    Whether you are troubleshooting crop issues or planning the next season, our team provides 
+                    actionable recommendations grounded in science and local knowledge.
+                </p>
+                <ul>
+                    <li>24/7 hotline for urgent crop concerns.</li>
+                    <li>Remote field monitoring using satellite imagery.</li>
+                    <li>Personalized farm improvement roadmaps.</li>
+                </ul>
+            </div>
+            <div class="experts-stats">
+                <div class="stat">
+                    <span class="number">120+</span>
+                    <span class="label">Certified Engineers</span>
+                </div>
+                <div class="stat">
+                    <span class="number">4.8/5</span>
+                    <span class="label">Client Satisfaction</span>
+                </div>
+                <div class="stat">
+                    <span class="number">30%</span>
+                    <span class="label">Average Yield Increase</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="assistance" id="request">
+            <div class="assistance-text">
+                <h2>Request Professional Assistance</h2>
+                <p>
+                    Share your farm details and goals. We will match you with a dedicated agricultural engineer 
+                    who will follow up with tailored guidance within 24 hours.
+                </p>
+                <div class="assurance">
+                    <div class="badge">✔</div>
+                    <div>
+                        <h3>Always-on support</h3>
+                        <p>Stay connected via phone, chat, or on-site visits whenever you need expert advice.</p>
+                    </div>
+                </div>
+            </div>
+            <form class="request-form">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label for="farm">Farm or Cooperative Name</label>
+                <input type="text" id="farm" name="farm" placeholder="Your farm name">
+
+                <label for="location">Location</label>
+                <input type="text" id="location" name="location" placeholder="City, Region" required>
+
+                <label for="services">Service Needed</label>
+                <select id="services" name="services" required>
+                    <option value="">Select a service</option>
+                    <option value="planning">Crop Planning</option>
+                    <option value="testing">Soil &amp; Water Testing</option>
+                    <option value="pest">Pest &amp; Disease Control</option>
+                    <option value="mechanization">Mechanization Guidance</option>
+                    <option value="irrigation">Irrigation Management</option>
+                    <option value="yield">Yield Monitoring</option>
+                </select>
+
+                <label for="message">How can we help?</label>
+                <textarea id="message" name="message" rows="4" placeholder="Describe your goals or challenges"></textarea>
+
+                <button type="submit" class="primary-btn">Submit Request</button>
+            </form>
+        </section>
+
+        <section class="testimonials">
+            <h2>Farmers Growing with Us</h2>
+            <div class="testimonial-grid">
+                <blockquote>
+                    “AgriCare helped us redesign our crop rotation plan. We saw healthier soil and a 25% increase in our vegetable yields within one season.”
+                    <cite>— Mary K., Green Valley Farms</cite>
+                </blockquote>
+                <blockquote>
+                    “Their engineers are true partners. The irrigation strategy they created saved water and kept our orchard thriving through a drought.”
+                    <cite>— Daniel R., Sunrise Orchards</cite>
+                </blockquote>
+                <blockquote>
+                    “Quick responses, data-backed advice, and on-site support when we needed it most. We highly recommend their services.”
+                    <cite>— Saanvi P., Riverbend Cooperative</cite>
+                </blockquote>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" id="contact">
+        <div class="footer-content">
+            <div>
+                <h3>AgriCare Advisory</h3>
+                <p>Professional agricultural guidance and crop care services for farms of every size.</p>
+            </div>
+            <div>
+                <h4>Contact</h4>
+                <p>📞 +1 (800) 555-AGRI</p>
+                <p>✉️ support@agricareadvisory.com</p>
+            </div>
+            <div>
+                <h4>Visit</h4>
+                <p>100 Harvest Lane<br>Springfield, IA 51000</p>
+            </div>
+        </div>
+        <div class="footer-note">
+            © <span id="year"></span> AgriCare Advisory. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
